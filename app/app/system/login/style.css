@@ -1,0 +1,13 @@
+#login {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+#login #login_form {
+	margin-top: 10%;
+    max-width: 500px;
+    width: 100%;
+}

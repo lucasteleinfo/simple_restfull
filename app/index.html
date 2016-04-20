@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Lucas França">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AngularJS</title>
+		<link rel="stylesheet" href="assets/bootswatch/paper/bootstrap.min.css">
+		<link rel="stylesheet" href="app/config/style.css">
+	</head>
+	<body ng-app="app">
+		
+		<div ng-show="user!=null" ng-include="'app/system/includes/header/view.html'"></div>
+		<div ng-view></div>
+		<div ng-show="user!=null" ng-include="'app/system/includes/footer/view.html'"></div>
+
+		<script src="assets/jquery/dist/jquery.min.js"></script>
+		<script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="assets/angular/angular.min.js"></script>
+		<script src="assets/angular-route/angular-route.min.js"></script>
+		<script src="assets/angular-jwt/dist/angular-jwt.min.js"></script>
+		<script src="assets/a0-angular-storage/dist/angular-storage.min.js"></script>
+		<!--APP-->
+		<script src="app/config/app.js"></script>
+		<script src="app/config/constants.js"></script>
+		<script src="app/config/filters.js"></script>
+		<script src="app/config/directives.js"></script>
+		<script src="app/config/config.js"></script>
+		<script src="app/config/run.js"></script>
+		<script src="app/system/includes/header/model.js"></script>
+		<script src="app/system/includes/header/controller.js"></script>
+		<script src="app/system/includes/footer/model.js"></script>
+		<script src="app/system/includes/footer/controller.js"></script>
+		<script src="app/system/home/model.js"></script>
+		<script src="app/system/home/controller.js"></script>
+		<script src="app/system/login/model.js"></script>
+		<script src="app/system/login/controller.js"></script>
+		<script src="app/system/posts/model.js"></script>
+		<script src="app/system/posts/controller.js"></script>
+	</body>
+</html>

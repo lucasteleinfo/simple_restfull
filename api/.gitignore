@@ -1,0 +1,5 @@
+*.rar
+*.tar
+*.zip
+assets/
+bower_components/

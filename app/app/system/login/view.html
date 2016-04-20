@@ -1,0 +1,50 @@
+<div id="login">
+  <form id="login_form" method="POST" ng-submit="vm.login()">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" autofocus ng-model="vm.item.email">
+    </div>
+    <div class="form-group">
+      <label for="pass">Senha</label>
+      <input type="password" class="form-control" id="pass" ng-model="vm.item.pass">
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Manter-me Logado!
+      </label>
+    </div>
+    <button type="submit" class="btn btn-block btn-primary">Logar</button>
+    <button type="button" class="btn btn-block btn-default" ng-click="vm.modalsignup()">Cadastre-se</button>
+  </form>
+</div>
+<!-- Modal Cadastro -->
+<div id="modalsignup" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="modalLabel">Novo Usuário</h4>
+      </div>
+      <div class="modal-body">
+        <form id="login_form" method="POST">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" class="form-control" id="name" autofocus ng-model="vm.itemup.name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" ng-model="vm.itemup.email">
+          </div>
+          <div class="form-group">
+            <label for="pass">Senha</label>
+            <input type="password" class="form-control" id="pass" ng-model="vm.itemup.pass">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" ng-click="vm.create()">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>

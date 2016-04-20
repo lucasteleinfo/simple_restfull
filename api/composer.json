@@ -1,0 +1,10 @@
+{
+	"description": "Web Service Portal MB",
+	"require": {
+		"php": ">=5.2.4",
+		"lcobucci/jwt": "^3.1"
+	},
+	"require-dev": {
+		"mikey179/vfsStream": "1.1.*"
+	}
+}

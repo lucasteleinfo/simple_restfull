@@ -27,9 +27,10 @@ Blza.. o WebService está pronto, agora vamos criar nossa base de dados:
 
 No banco de dados MySQL
 
+Inicio Script
+
 CREATE DATABASE api;
 
--------Inicio Script ---------
 USE api;
 
 CREATE TABLE tb_adm_users (
@@ -51,7 +52,8 @@ CREATE TABLE tb_adm_posts (
   ad_pos_dup datetime DEFAULT NULL,
   PRIMARY KEY (ad_pos_id)
 );
--------Fim Script ---------
+
+Fim Script
 
 
 Banco de Dados criado vamos testar o web service:
